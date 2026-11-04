@@ -1,0 +1,131 @@
+# JARVIS Installation Guide
+
+### Step 1. Install Python
+1. Open https://www.python.org/downloads/
+2. Download Python 3.13.
+3. Run the installer.
+4. Tick **Add Python to PATH**.
+5. Click **Install Now**.
+
+### Step 2. Install Git
+1. Open https://git-scm.com/downloads
+2. Download Git for Windows.
+3. Run the installer.
+4. Keep the default installation options and finish the installation.
+
+### Step 3. Download JARVIS
+1. Open the JARVIS repository on GitHub.
+2. Click the green **Code** button.
+3. Click the copy icon beside the HTTPS link.
+4. Open File Explorer.
+5. Go to the folder where you want JARVIS installed.
+6. Open that folder in PowerShell.
+7. Type this command, replacing the example link with your copied link:
+
+```powershell
+git clone https://github.com/YOUR_USERNAME/JARVIS-AI-Desktop-Assistant.git
+```
+
+8. Press Enter.
+9. A new JARVIS project folder will be created.
+
+### Step 4. Open the JARVIS folder
+1. Open the downloaded JARVIS folder.
+2. Right-click inside the folder.
+3. Select **Open in Terminal**.
+
+### Step 5. Create the virtual environment
+1. In the terminal, type:
+
+```powershell
+py -3.13 -m venv .venv
+```
+
+2. Press Enter.
+3. Wait for the command to finish.
+
+### Step 6. Activate the virtual environment
+1. Type:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+2. Press Enter.
+3. Check that `(.venv)` appears at the beginning of the terminal line.
+
+### Step 7. Install the required packages
+1. Type:
+
+```powershell
+python -m pip install --upgrade pip
+```
+
+2. Press Enter and wait.
+3. Then type:
+
+```powershell
+pip install -r requirements.txt
+```
+
+4. Press Enter.
+5. Wait until all packages are installed.
+
+### Step 8. Create the API key file
+1. Open the JARVIS folder in VS Code.
+2. In the left Explorer panel, find the main project folder.
+3. Right-click the main folder.
+4. Select **New File**.
+5. Name the file:
+
+```text
+.env
+```
+
+6. Open the `.env` file.
+7. Write your Gemini API key in the format expected by JARVIS.
+
+For example, if the code expects `GEMINI_API_KEY`, write:
+
+```env
+GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+```
+
+8. Replace the example text with your actual API key.
+9. Save the file using Ctrl + S.
+
+Get a Gemini API key from:
+https://aistudio.google.com/apikey
+
+**Never share your API key or upload your `.env` file to GitHub.**
+
+### Step 9. Start JARVIS
+1. Open the terminal in the JARVIS folder.
+2. Make sure `(.venv)` appears at the beginning.
+3. Type:
+
+```powershell
+python main.py
+```
+
+4. Press Enter.
+5. Wait for JARVIS to launch.
+
+### Step 10. Start JARVIS next time
+You do not need to repeat the installation.
+
+1. Open the JARVIS folder.
+2. Open PowerShell in that folder.
+3. Activate the virtual environment:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+4. Start JARVIS:
+
+```powershell
+python main.py
+```
+
+**That's it! JARVIS is ready to use.**

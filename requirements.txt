@@ -1,0 +1,11 @@
+
+PySide6
+PySide6-WebEngine
+psutil
+google-genai
+python-dotenv
+numpy
+sounddevice
+scipy
+openwakeword
+onnxruntime
