@@ -156,10 +156,8 @@ Follow these steps to install JARVIS on your Windows computer.
 Open PowerShell and run:
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/JARVIS-AI-Desktop-Assistant.git
+git clone https://github.com/Ashar-yar-official/JARVIS-AI.git
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username.
 
 Enter the project folder:
 
